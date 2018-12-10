@@ -4,12 +4,23 @@
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{asset('css/normalize.css')}}">
             <link rel="stylesheet" href="{{asset('css/main.css')}}">
+            <style>
+              <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+            </style>
         {% endblock %}
     </head>
     <body>
         <div class="header">
-            Coucou
+            <div id="navbar">
+                <ul id="navbar_list">
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Staff</a></li>
+                    <li><a href="#">Forum</a></li>
+                </ul>
+            </div>
         </div>
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}

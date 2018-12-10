@@ -1,3 +1,31 @@
+               
 .header{
-    background-color:red;
+    margin-top:0;
+    width:100%;
+    background-color:#F5F5F5;
+    /*background-color:#e74c3c;*/
+    text-align:center;
+    height:80px;
+    position:relative;
 }
+
+#navbar{
+  transform: translateY(25%); /* tiré de la moitié de sa propre hauteur */
+}
+
+#navbar_list{
+    display:inline-block;
+}
+
+#navbar_list li{
+    display:inline-block;
+}
+
+#navbar_list li a{
+    font-family: 'Quicksand', sans-serif;
+    text-transform:Uppercase;
+    text-decoration:none;
+    color:#000;
+    padding:10px;
+}
+
